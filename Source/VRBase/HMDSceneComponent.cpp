@@ -46,7 +46,7 @@ void UHMDSceneComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 					const FTransform ParentWorld = CalcNewComponentToWorld(FTransform());
 
 					XRCamera->SetupLateUpdate(ParentWorld, this, bLockToHmd == 0);
-
+					
 					if (bLockToHmd)
 					{
 						FQuat Orientation;
